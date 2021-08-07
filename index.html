@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Chun-Ting Chen</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="index.js" type="text/javascript"></script>
+  <link rel="icon" href="img/title.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="top">
+    <div id="selection">
+      <div onclick=jump(m1)>About me</div>
+      <div onclick=jump(m2)>Skills</div>
+      <div onclick=jump(m3)>Personality</div>
+      <div onclick=jump(m4)>Experience</div>
+      <div onclick=jump(m5)>Contact me</div>
+    </div>
+  </div>
+  <div id="mid">
+    <div id="m1" style="background-image: url('img/code2.png');">
+      <div>
+        <img id="myFace" src="img/chen.png">
+      </div>
+      <div id="intro">
+        Hi! I am Chun-Ting Chen (陳俊廷), a python software engineer graduated from National Chiao Tung University master of Mechanical Engineering.
+      </div>
+    </div>
+
+    <div id="m2">
+      <h1>Skills</h1>
+      <div>
+        <div class="row">
+          <div class="skill">Python</div>
+          <div class="skill">Flask</div>
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">Linux</div>
+          <div class="skill">Git</div>
+        </div>
+        <div class="row">
+          <div class="skill">Socket</div>
+          <div class="skill">C++</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Jquery</div>
+          <div class="skill">MySQL</div>
+        </div>
+      </div>
+    </div>
+    <div id="m3">
+      <h1>Personality</h1>
+      <div id="m3body">
+        <div class="personality_cell">
+          <img class="personality_img" src="img/curious.jpeg">
+          <div class="personality_title">Curious</div>
+          <div class="personality_description">
+            I am curiosity about everything of software knowledge. How to achieve the goal with a more concise grammar and a faster method is my motivation for learning.
+          </div>
+        </div>
+        <div class="personality_cell">
+          <img class="personality_img" src="img/ambitious.jpg">
+          <div class="personality_title">Ambitious</div>
+          <div class="personality_description">
+            Become a powerful engineer. Accumulate experience and knowledge with continuous practice to become the ideal engineer in my mind.
+          </div>
+        </div>
+        <div class="personality_cell">
+          <img class="personality_img" src="img/passionate.jpeg">
+          <div class="personality_title">Passionate</div>
+          <div class="personality_description">
+            I have great enthusiasm for programming, which is why I became a software engineer.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m4">
+      <h1>Experience</h1>
+      <div>
+        <h3>GYRO System - Software Development Engineer (2020/8 - 2021/8)</h3>
+        <li>Development and maintenance of electronic shelves, stocker system, AGV battery exchanges stations.</li>
+        <li>Establish and maintain services in Linux</li>
+        <li>Data transfer with Socket</li>
+        <li>Use Flask to set up website and API</li>
+        <li>Update and set up with Bash Script</li>
+        <li>Maintain databases with MySQL</li>
+      </div>
+    </div>
+    <div id="m5">
+      <h1>Contact me</h1>
+      <div id="m5body">
+
+        <form id="contact_form" enctype="text/plain" accept-charset="utf-8">
+          <input id="nameText" type="text" name="Name" value size="60" placeholder="Name" required>
+          <input id="emailText" type="email" name="Email" value size="60" placeholder="Email" required>
+          <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="Phone" required>
+          <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="Subject" required>
+          <textarea id="bodyText" name="your-message" rows="10" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
+          <div>
+            <input id="sendText" type="button" value="SEND" onclick="submitHandler()">
+            <a id="mailTo"></a>
+          </div>
+        </form>
+
+        <div id="contact_info">
+          <div>
+            <div>
+              Chun-Ting Chen (陳俊廷)
+            </div>
+            <div>
+              <a href="mailTo:leopardx602@gmail.com">leopardx602@gmail.com</a>
+            </div>
+            <div>
+              <a href="https://github.com/leopardx602" class="fa fa-github icon"></a>
+              <a href="mailTo:leopardx602@gmail.com" class="fa fa-envelope icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom">© Chun-Ting Chen</div>
+</body>
+
+</html>
